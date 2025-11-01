@@ -11,3 +11,11 @@ horizontal_move_z: 10.
 speed: 150.   #speed of travel moves between screws
 screw_thread: CW-M4  #measure your bed screw m3=3mm / m4=4mm / m5=5mm
 
+[gcode_macro LED_ON]
+    gcode:
+      SET_PIN PIN=LIGHT_pin VALUE=1
+
+[gcode_macro LED_OFF]
+    gcode:
+      SET_PIN PIN=LIGHT_pin VALUE=0
+
